@@ -5,7 +5,7 @@ This code allows you to add, delete, search, and modify for a image by ID.
 This code uses: 
 
 - Node.js
-- MongoDB Clusters
+- MongoDB
 
 An image is defined with: 
 ```
