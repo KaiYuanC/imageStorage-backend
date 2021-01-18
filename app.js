@@ -20,7 +20,7 @@ app.use('posts', ()=> {
 })
 
 // Routes
-app.use('/', postsRoute);
+app.use('/posts', postsRoute);
 
 //Connect to DB
 mongoose.connect(`mongodb+srv://kaiyuan:${DB_PASSWORD}@images.67whs.mongodb.net/images?retryWrites=true&w=majority`, 
