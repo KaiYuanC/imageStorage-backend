@@ -9,7 +9,7 @@ router.get('/posts', (req, res)=> {
     res.send('we are on posts')
 });
 
-router.post('/', (req, res)=> {
+router.post('/posts', (req, res)=> {
     console.log(req.body);
 });
 
