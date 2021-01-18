@@ -11,16 +11,15 @@ const PORT = process.env.PORT || 3000
 const DB_PASSWORD = process.env.DB_PASSWORD
 
 // Get Routers 
-const postsRoute = require('./routes/posts')
 const imagesRoute = require('./routes/images')
 
 // Middlewares
-app.use('posts', ()=> {
+app.use('images', ()=> {
     console.log('This is a middleware running')
 })
 
 // Routes
-app.use('/posts', postsRoute);
+app.use('/images', imagesRoute);
 
 //Connect to DB
 mongoose.connect(`mongodb+srv://kaiyuan:${DB_PASSWORD}@images.67whs.mongodb.net/images?retryWrites=true&w=majority`, 
